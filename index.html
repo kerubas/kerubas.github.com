@@ -1,1 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oráculo - Grêmio Estudantil</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">ORÁCULO</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#propostas">Propostas</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="https://forms.gle/pxEkTbw6ym43RWeT6" class="btn-destaque">Venha Fazer Parte</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Oráculo</h1>
+            <p class="lema">"Todos são iguais perante a lei"</p>
+            <p class="sublema">"Foco no futuro"</p>
+            <a href="https://forms.gle/pxEkTbw6ym43RWeT6" class="cta-button">Junte-se a Nós</a>
+        </div>
+    </section>
+
+    <!-- Quem Somos -->
+    <section id="quem-somos" class="lideranca">
+        <h2>Nossa Liderança</h2>
+        <div class="lideres-container">
+            <div class="lider-card">
+                <div class="lider-img">
+                    <img src="img/kelvin.jpg" alt="Kelvin - Líder">
+                </div>
+                <h3>Kelvin</h3>
+                <p class="cargo">Líder</p>
+                <p class="descricao">Responsável por representar o equilíbrio entre 
+                    alunos e professores</p>
+            </div>
+
+            <div class="lider-card">
+                <div class="lider-img">
+                    <img src="img/gabriel.jpg" alt="Gabriel - Vice-líder">
+                </div>
+                <h3>Gabriel</h3>
+                <p class="cargo">Vice-líder</p>
+                <p class="descricao">Responsável pela organização financeira e 
+                    captação de recursos</p>
+            </div>
+
+            <div class="lider-card">
+                <div class="lider-img">
+                    <img src="img/laura.jpg" alt="Laura - Secretária">
+                </div>
+                <h3>Laura</h3>
+                <p class="cargo">Secretária</p>
+                <p class="descricao">Responsável pela organização e transparência 
+                    das ações</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Propostas -->
+    <section id="propostas" class="propostas">
+        <h2>Nossas Propostas</h2>
+        <div class="propostas-grid">
+            <!-- Interclasse -->
+            <div class="proposta-card">
+                <i class="fas fa-futbol proposta-icone"></i>
+                <h3 class="proposta-titulo">Evento Esportivo Escolar</h3>
+                <p class="proposta-descricao">
+                    Campeonato que reúne todas as turmas, promovendo integração 
+                    e espírito esportivo.
+                </p>
+                <button class="btn-saiba-mais" data-proposta="interclasse">
+                    Saiba Mais
+                </button>
+            </div>
+
+            <!-- Feira de Talentos -->
+            <div class="proposta-card">
+                <i class="fas fa-star proposta-icone"></i>
+                <h3 class="proposta-titulo">Feira de Talentos e Profissões</h3>
+                <p class="proposta-descricao">
+                    Evento para apresentação de habilidades e descoberta de 
+                    carreiras profissionais.
+                </p>
+                <button class="btn-saiba-mais" data-proposta="feira">
+                    Saiba Mais
+                </button>
+            </div>
+
+            <!-- Voz dos Alunos -->
+            <div class="proposta-card">
+                <i class="fas fa-comments proposta-icone"></i>
+                <h3 class="proposta-titulo">Debate "Voz dos Alunos"</h3>
+                <p class="proposta-descricao">
+                    Espaço democrático para discussão de ideias e melhorias 
+                    para a escola.
+                </p>
+                <button class="btn-saiba-mais" data-proposta="voz">
+                    Saiba Mais
+                </button>
+            </div>
+
+            <!-- Escola Limpa -->
+            <div class="proposta-card">
+                <i class="fas fa-leaf proposta-icone"></i>
+                <h3 class="proposta-titulo">Escola Limpa, Consciência Verde</h3>
+                <p class="proposta-descricao">
+                    Campanha de sustentabilidade e cuidados com o ambiente escolar.
+                </p>
+                <button class="btn-saiba-mais" data-proposta="escola-limpa">
+                    Saiba Mais
+                </button>
+            </div>
+
+            <!-- Ciclo de Palestras -->
+            <div class="proposta-card">
+                <i class="fas fa-microphone proposta-icone"></i>
+                <h3 class="proposta-titulo">Ciclo de Palestras "Empodere-se"</h3>
+                <p class="proposta-descricao">
+                    Série de palestras inspiradoras com profissionais e ex-alunos.
+                </p>
+                <button class="btn-saiba-mais" data-proposta="palestras">
+                    Saiba Mais
+                </button>
+            </div>
+
+            <!-- Diversidade Cultural -->
+            <div class="proposta-card">
+                <i class="fas fa-globe proposta-icone"></i>
+                <h3 class="proposta-titulo">Dia da Diversidade Cultural</h3>
+                <p class="proposta-descricao">
+                    Celebração das diferentes culturas e origens dos alunos.
+                </p>
+                <button class="btn-saiba-mais" data-proposta="diversidade">
+                    Saiba Mais
+                </button>
+            </div>
+
+            <!-- Aluno e Professor -->
+            <div class="proposta-card">
+                <i class="fas fa-chalkboard-teacher proposta-icone"></i>
+                <h3 class="proposta-titulo">Aluno e Professor Juntos</h3>
+                <p class="proposta-descricao">
+                    Iniciativas para fortalecer a relação entre alunos e professores.
+                </p>
+                <button class="btn-saiba-mais" data-proposta="aluno-professor">
+                    Saiba Mais
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modais das Propostas -->
+    <div class="modal-container" id="modal-container">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-titulo"></h3>
+                <button class="modal-fechar">&times;</button>
+            </div>
+            <div class="modal-conteudo"></div>
+        </div>
+    </div>
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
+        <h2>Entre em Contato</h2>
+        <div class="contato-container">
+            <div class="contato-card">
+                <i class="fab fa-whatsapp contato-icone"></i>
+                <h3>WhatsApp</h3>
+                <p>Kelvin (Líder)</p>
+                <a href="https://wa.me/5551999980670?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Grêmio%20Oráculo" 
+                   target="_blank" 
+                   class="whatsapp-link">
+                    (51) 99998-0670
+                </a>
+            </div>
+
+            <div class="contato-card">
+                <i class="fab fa-instagram contato-icone"></i>
+                <h3>Instagram</h3>
+                <p>Siga-nos</p>
+                <a href="https://www.instagram.com/oraculo25_" 
+                   target="_blank">@oraculo25_</a>
+            </div>
+
+            <div class="contato-card">
+                <i class="fas fa-envelope contato-icone"></i>
+                <h3>E-mail</h3>
+                <p>Envie sua mensagem</p>
+                <a href="mailto:25oraculo@gmail.com">25oraculo@gmail.com</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção do Formulário -->
+    <section id="https://forms.gle/pxEkTbw6ym43RWeT6" class="form-section">
+        <h2>Faça Parte da Nossa Equipe</h2>
+        <div class="form-container">
+            <p class="form-intro">
+                Queremos conhecer você melhor! Clique no botão abaixo para 
+                preencher nosso formulário de inscrição.
+            </p>
+            <a href="https://forms.gle/pxEkTbw6ym43RWeT6" 
+               class="cta-button form-button" 
+               target="_blank">
+                Preencher Formulário de Inscrição
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h3>Grêmio Oráculo</h3>
+                <p class="slogan">Sua voz, nossa missão</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#quem-somos">Quem Somos</a></li>
+                    <li><a href="#propostas">Propostas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="https://forms.gle/pxEkTbw6ym43RWeT6">Inscreva-se</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contato">
+                <h4>Contatos</h4>
+                <ul>
+                    <li>
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/5551999980670?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Grêmio%20Oráculo" 
+                           target="_blank">
+                            (51) 99998-0670
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fab fa-instagram"></i>
+                        <a href="https://www.instagram.com/oraculo25_" 
+                           target="_blank">
+                            @oraculo25_
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:25oraculo@gmail.com">
+                            25oraculo@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-content">
+                <p>&copy; 2024 Grêmio Oráculo. Todos os direitos reservados.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/oraculo25_" 
+                       class="social-icon" 
+                       target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/5551999980670" 
+                       class="social-icon" 
+                       target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:25oraculo@gmail.com" 
+                       class="social-icon">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
