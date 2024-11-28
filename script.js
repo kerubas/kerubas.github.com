@@ -181,4 +181,33 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.style.overflow = 'auto';
         }
     });
+
+    // Menu hamburguer
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+    
+    // Fechar menu ao clicar em um link
+    const navItems = document.querySelectorAll('.nav-links a');
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                navLinks.classList.remove('active');
+            }
+        });
+    });
+    
+    // Ajustar menu ao redimensionar a tela
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            navLinks.classList.remove('active');
+            navLinks.style.display = 'flex';
+        } else {
+            navLinks.style.display = navLinks.classList.contains('active') ? 
+                'flex' : 'none';
+        }
+    });
 }); 

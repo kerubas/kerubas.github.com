@@ -1,18 +1,111 @@
 /* Variáveis globais */
 :root {
     --cor-primaria: #001F3F;
-    --cor-secundaria: #007BFF;
-    --cor-clara: #FFFFFF;
+    --cor-secundaria: #003366;
     --cor-destaque: #FFD700;
+    --cor-clara: #FFFFFF;
     --fonte-titulo: 'Cinzel', serif;
     --fonte-corpo: 'Open Sans', sans-serif;
 }
 
-/* Reset e estilos base */
+/* Estilos base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Media Queries para Responsividade */
+/* Mobile (até 480px) */
+@media screen and (max-width: 480px) {
+    .nav-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* Será mostrado via JavaScript */
+    }
+    
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .lema, .sublema {
+        font-size: 1rem;
+    }
+    
+    .lideres-container {
+        flex-direction: column;
+    }
+    
+    .lider-card {
+        width: 90%;
+        margin: 1rem auto;
+    }
+    
+    .proposta-card {
+        width: 100%;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+/* Tablet (481px até 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .nav-container {
+        padding: 1rem;
+    }
+    
+    .nav-links {
+        display: none; /* Será mostrado via JavaScript */
+    }
+    
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .lideres-container {
+        flex-wrap: wrap;
+    }
+    
+    .lider-card {
+        width: 45%;
+        margin: 1rem;
+    }
+    
+    .proposta-card {
+        width: 45%;
+    }
+}
+
+/* Menu hamburguer para mobile/tablet */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--cor-clara);
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
 }
 
 body {
