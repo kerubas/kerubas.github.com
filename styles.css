@@ -804,3 +804,10 @@ body {
     background: rgba(37, 211, 102, 0.2) !important;
     color: #25d366 !important;
 }
+
+.img-gabriel {
+    /* Ajusta o posicionamento da imagem */
+    object-position: center;
+    /* Garante que a imagem cubra o container mantendo a proporção */
+    object-fit: cover;
+}
